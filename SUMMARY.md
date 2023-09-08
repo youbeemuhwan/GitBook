@@ -37,4 +37,4 @@
 
 ## 🔐 Spring Security
 
-* [UserDetails](spring-security/userdetails.md)
+* [UserDetails](Spring-Security/UserDetails.md)
