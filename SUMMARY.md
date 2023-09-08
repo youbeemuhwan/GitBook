@@ -18,18 +18,18 @@
 
 ## 📝 클린 코드
 
-* [1장 깨끗한 코드](undefined/1.md)
-* [2장 의미있는 이름](undefined/2.md)
-* [3장 함수](undefined/3.md)
-* [4장 주석](undefined/4.md)
-* [5장 형식 맞추기](undefined/5.md)
+* [1장 깨끗한 코드](CLEAN_CODE/1.md)
+* [2장 의미있는 이름](CLEAN_CODE/2.md)
+* [3장 함수](CLEAN_CODE/3.md)
+* [4장 주석](CLEAN_CODE/4.md)
+* [5장 형식 맞추기](CLEAN_CODE/5.md)
 
 ## 💻 주니어 자바 개발자를 위한 100가지 질문
 
-* [기초](100/undefined.md)
-* [Container](100/container.md)
-* [Multi-Threading](100/multi-threading.md)
-* [Reflection](100/reflection.md)
+* [기초](JAVA_100_QUESTION/undefined.md)
+* [Container](JAVA_100_QUESTION/container.md)
+* [Multi-Threading](JAVA_100_QUESTION/multi-threading.md)
+* [Reflection](JAVA_100_QUESTION/reflection.md)
 
 ## 📔 한 주 회고
 
