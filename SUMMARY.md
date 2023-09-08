@@ -8,7 +8,7 @@
 * [5장 연관관계 매핑 기초](JAVA_ORM_JPA/5.md)
 * [8장 프록시와 연관관계 정리](JAVA_ORM_JPA/8.md)
 * [9장 값타입](JAVA_ORM_JPA/9.md)
-* [10장 객체지향 쿼리 언어](JAVA_ORM_JPA/10.md)
+* [10장 객체지향 쿼리 언어](JAVA_ORM_JPA/10장.md)
 * [11장 웹 애플리케이션 제작](JAVA_ORM_JPA/11.md)
 * [12장 스프링 데이터 JPA](JAVA_ORM_JPA/12-jpa.md)
 * [13장 웹 애플리케이션과 영속성 관리](JAVA_ORM_JPA/13.md)
