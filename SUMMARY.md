@@ -26,10 +26,10 @@
 
 ## 💻 주니어 자바 개발자를 위한 100가지 질문
 
-* [기초](JAVA_100_QUESTION/undefined.md)
-* [Container](JAVA_100_QUESTION/Container.md)
-* [Multi-Threading](JAVA_100_QUESTION/multi-threading.md)
-* [Reflection](JAVA_100_QUESTION/reflection.md)
+* [기초](JAVA_100_Question/undefined.md)
+* [Container](JAVA_100_Question/Container.md)
+* [Multi-Threading](JAVA_100_Question/multi-threading.md)
+* [Reflection](JAVA_100_Question/reflection.md)
 
 ## 📔 한 주 회고
 
