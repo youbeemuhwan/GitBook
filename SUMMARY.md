@@ -38,7 +38,7 @@
 
 ## 📔 한 주 회고 <a href="#week" id="week"></a>
 
-* [Page 1](week/page-1.md)
+* [9/11 \~ 9/15](week/page-1.md)
 
 ## 🔐 Spring Security
 
