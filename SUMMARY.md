@@ -35,6 +35,7 @@
 * [Reflection](JAVA\_100\_Question/reflection.md)
 * [Object Copy](100/object-copy.md)
 * [Java Web](100/java-web.md)
+* [Exception](100/exception.md)
 
 ## 📔 한 주 회고 <a href="#week" id="week"></a>
 
@@ -48,3 +49,8 @@
 ## 오브젝트 <a href="#object" id="object"></a>
 
 * [한 줄 요약](object/undefined.md)
+
+## CodingTest
+
+* [\[Lv.1\] : 추억 점수](codingtest/lv.1.md)
+* [2016년](codingtest/2016.md)
