@@ -65,7 +65,7 @@ JAVA 직렬화 (사용하지 않는걸 권고)
 
 InvocationHandler 라는 인터페이스에  invoke 라는 메서드를 구현해줘야한다.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 해당 인터페이스를 구현한 뒤 사용 하려면 해당 핸들러를 생성 한 뒤 Proxy.newProxyInstance() 객체를 생성한다. 해당 객체에는 타겟 메서드를 지정해야 한다. 만약 타겟 메서드는 인터페이스 여야 한다. 그렇지 않으면 오류가 발생한다.
 
