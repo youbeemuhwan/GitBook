@@ -36,6 +36,7 @@
 * [Object Copy](100/object-copy.md)
 * [Java Web](100/java-web.md)
 * [Exception](100/exception.md)
+* [Internet](100/internet.md)
 
 ## 📔 한 주 회고 <a href="#week" id="week"></a>
 
