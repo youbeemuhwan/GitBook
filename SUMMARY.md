@@ -41,6 +41,7 @@
 ## 📔 한 주 회고 <a href="#week" id="week"></a>
 
 * [9/11 \~ 9/15](week/page-1.md)
+* [9/18 \~ 9/22](week/9-18-9-22.md)
 
 ## 🔐 Spring Security
 
@@ -53,6 +54,7 @@
 
 ## CodingTest
 
-* [\[Lv.1\] : 추억 점수](codingtest/lv.1.md)
-* [\[Lv.1\] : 2016년](codingtest/lv.1-2016.md)
+* [\[Lv.1\]  추억 점수](codingtest/lv.1.md)
+* [\[Lv.1\]  2016년](codingtest/lv.1-2016.md)
 * [\[Lv.1\] 카드 뭉치](codingtest/lv.1-1.md)
+* [\[Lv.1\] 예산](codingtest/lv.1-2.md)
