@@ -59,3 +59,4 @@
 * [\[Lv.1\] 카드 뭉치](codingtest/lv.1-1.md)
 * [\[Lv.1\] 예산](codingtest/lv.1-2.md)
 * [\[Lv.1\] 이상한 문자 만들기](codingtest/lv.1-3.md)
+* [\[Lv.1\] 삼총사](codingtest/lv.1-4.md)
