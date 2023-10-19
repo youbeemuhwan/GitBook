@@ -69,4 +69,6 @@
 
 ## Etc
 
+* [Ngnix 란?](etc/ngnix.md)
+* [Redis 란?](etc/redis.md)
 * [XML 파싱 (Xpath)](etc/xml-xpath.md)
