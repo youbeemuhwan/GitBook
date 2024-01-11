@@ -62,3 +62,14 @@ public class   {
 }
 ```
 
+
+
+
+
+원격 WAS 설정 시 유의사항
+
+1. JDK 버젼
+2. sever.xml - docbase 경로, db 경로
+3. 톰캣 환경변수
+4. 자바 환경변수
+5. 방화벽 여부
