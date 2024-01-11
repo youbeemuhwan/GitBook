@@ -30,3 +30,7 @@ Page 를 사용하면 스프링 데이터 JPA가 검색된 전체 데이터 건�
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 자신이 쓴 게시글 리스트를 가져오는 기능인데 첫번째 SELECT 문 과 더불어 두번째 SELECT COUNT 쿼리가 날라간걸 볼수있다.
+
+
+
+해당 카운트를 이용하여 페이징을 구성한다.
