@@ -1,4 +1,4 @@
-# ISSUE
+# 유니크 값 없는 테이블을 JPA Entity 연결하기
 
 CASE 1  : SPRING BOOT ,  JPA  프로젝트 에서 이미 존재하는 오라클 디비 와 엔티티 매칭 하는 로직
 
@@ -24,62 +24,36 @@ CASE 1  : SPRING BOOT ,  JPA  프로젝트 에서 이미 존재하는 오라클 
 
 
 
-1. @SpringBootApplication(exclude={DataSourceAutoConfiguration.class}) 삭제 시 hibernate-dialect 오류 발생
-
-* spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.OracleDialect (해당 applicaiton.properties에 주입)
+위 같은 방법으로 해결이 되었다고 생각했지만 결과를 자세히 살펴보니 유니크값을 가진다고 생각했던 컬럼이 유니크값이 아니여서 정상 출력되지 않았다.
 
 
 
-2. 오라클 DB 연결 설정 정보 오류&#x20;
+그 어떤 컬럼도 @ID 로 잡을수없다고 판단 한 뒤 복합키 라는 것을 사용했다.
 
-* 마지막 서버이름 부분 SID 일시 에만 :SID,   /서버이름
-* spring.datasource.url=jdbc:oracle:thin:@DB IP 주소:SID
-* spring.datasource.url=jdbc:oracle:thin:@DB IP 주소/서버이름
+말그대로 여러 컬럼을 한데 모아 그 자체를 키로 사용하는것이다.
+
+컬럼 각각은 유니크 하진 않지만 로우는 그 자체로 유니크하기 때문에 로우 하나를 통채로 복합키로 잡고 진행하였다.
 
 
 
 ```
 @Getter
-@Entity
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Immutable
-@Table(name = "DB 테이블명")
-
-public class   {
-
-    @Column(name = "")
-    private String ;
-    @Id
-    @Column(name = "" , columnDefinition = "VARCHAR2(100)")
-    private String ;
-
-    @Column(name = "" , columnDefinition = "VARCHAR2(100)")
-    private String ;
-
-    @Column(name = "" ,columnDefinition = "NUMBER")
-    private String ;
-
+@Embeddable
+public class CompositeKey implements Serializable {    
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
 ```
 
+위 같이 만들어줬고 클래스는 기존 엔티티 클래스 와 동일하게 작성하였다.
 
 
 
+```
+public class Entity {
 
-원격 WAS 설정 시 유의사항
+    @EmbeddedId
+    private CompositeKey compositeKey;
 
-1. JDK 버젼
-2. sever.xml - docbase 경로, db 경로
-3. 톰캣 환경변수
-4. 자바 환경변수
-5. 방화벽 여부
-
-
-
-
-
-was 실행 시 히카리풀 오류 &#x20;
-
-
-
-* 디비 커넥션 오류
+}
+```

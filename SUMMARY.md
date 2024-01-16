@@ -53,6 +53,12 @@
 
 * [한 줄 요약](object/undefined.md)
 
+## ISSUE <a href="#object" id="object"></a>
+
+* [유니크 값 없는 테이블을 JPA Entity 연결하기](object-1/jpa-entity.md)
+* [Dialect](object-1/dialect.md)
+* [서버에 WAS 패키징 시 오류](object-1/was.md)
+
 ## CodingTest
 
 * [\[Lv.1\]  추억 점수](codingtest/lv.1.md)
