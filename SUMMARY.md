@@ -82,3 +82,4 @@
 * [XML 파싱 (Xpath)](etc/xml-xpath.md)
 * [Spring Boot + Redis + Jwt](etc/spring-boot-+-redis-+-jwt.md)
 * [ISSUE](etc/issue.md)
+* [Method 와 함수의 차이](etc/method.md)
