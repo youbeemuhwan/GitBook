@@ -74,6 +74,7 @@
 * [Spring WebFlux 란?](java/spring-webflux.md)
 * [동기 / 비동기 | Blocking / Non-Blocking](java/or-blocking-non-blocking.md)
 * [Ajax 란?](java/ajax.md)
+* [Fetch API](java/fetch-api.md)
 
 ## Etc
 
