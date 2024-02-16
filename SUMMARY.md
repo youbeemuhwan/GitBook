@@ -86,6 +86,7 @@
 * [Method 와 함수의 차이](etc/method.md)
 * [Docker](etc/docker.md)
 * [GC (Garbage Collection)](etc/gc-garbage-collection.md)
+* [객체지향 프로그램 과 디자인패턴 -1](etc/1.md)
 
 ## CS
 
