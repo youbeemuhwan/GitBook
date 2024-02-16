@@ -85,6 +85,7 @@
 * [ISSUE](etc/issue.md)
 * [Method 와 함수의 차이](etc/method.md)
 * [Docker](etc/docker.md)
+* [GC (Garbage Collection)](etc/gc-garbage-collection.md)
 
 ## CS
 
