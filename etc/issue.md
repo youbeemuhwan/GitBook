@@ -24,6 +24,33 @@ CASE 1  : SPRING BOOT ,  JPA  프로젝트 에서 이미 존재하는 오라클 
 
 
 
+
+
+하지만 유니크값인줄 알았던 값이 알고보니 유니크값이 아니였고 테이블에 있는 어떤 컬럼도 UNIQUE 하지 않았다. 그래서 한 로우 자체를 즉 모든 컬럼을 묶어서 복합키로 만들어서 복합키에 PK 값을 지정해주었다.
+
+
+
+혹은 SEQUENCE\_GENERATOR 를 이용하여 임의의 시퀀스값을 만들어 해당 값을 PK 로 지정하였다.
+
+
+
+이때 오라클에서 컬럼을 생성한 뒤 해당 컬럼의 이름으로 시퀀스를 따로 생성해주어야한다.
+
+```
+CREATE SEQUENCE your_sequence_name
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    MAXVALUE 999999999999999999999999999
+    CACHE 20;
+```
+
+
+
+
+
+
+
 1. @SpringBootApplication(exclude={DataSourceAutoConfiguration.class}) 삭제 시 hibernate-dialect 오류 발생
 
 * spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.OracleDialect (해당 applicaiton.properties에 주입)
@@ -83,3 +110,6 @@ was 실행 시 히카리풀 오류 &#x20;
 
 
 * 디비 커넥션 오류
+
+
+
