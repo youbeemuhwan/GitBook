@@ -1,4 +1,4 @@
-# UserDetails
+# UserDetails, SecurityCofing
 
 **UserDetails**
 
@@ -8,9 +8,7 @@ Spring Security 에서 사용자의 정보를 가져올때 보통 UserDetails �
 
 마치 Dto 역할 이라고 생각하면 이해하기 편하다.
 
-
-
-이러한 Dto 역할을 하는 만큼 각 사용자 마다 필요한 사용자 정보가 다 다르므로 보통 추가할 부분은 추가해서 구현한 뒤 사용한다. ex. CustomUserDetails&#x20;
+이러한 Dto 역할을 하는 만큼 각 사용자 마다 필요한 사용자 정보가 다 다르므로 보통 추가할 부분은 추가해서 구현한 뒤 사용한다. ex. CustomUserDetails
 
 ```
 @RequiredArgsConstructor
@@ -55,9 +53,7 @@ public class CustomUserDetails implements UserDetails {
 
 ```
 
-필자는 위에 처럼 Member (유저 도메인)  를 의존성 주입을 통해 가져와 거기서 각 유저정보를 빼내 넣어주는 방식으로 진행하였다.
-
-
+필자는 위에 처럼 Member (유저 도메인) 를 의존성 주입을 통해 가져와 거기서 각 유저정보를 빼내 넣어주는 방식으로 진행하였다.
 
 하지만 그냥 멤버 변수를 선언해서 변수를 뿌려주는 방식도 가능하다.
 
@@ -130,13 +126,7 @@ public class CustomUserDetails implements UserDetails {
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ## UserDetailsService
-
-
 
 사용자 정보를 DB에 직접 접근해 가져오는 인터페이스 이다.
 
@@ -188,9 +178,7 @@ public class SecurityConfig {
 
 httpSecurity 를 반환값으로 놓고 빌더 형식으로 각 옵션 값을 주는 방식으로 설정한다.
 
-
-
-csrf : 해당 옵션을 활성화하면  CSRF 토큰이 발급되는 필터를 시큐리티 가 자동으로 설정해준다.
+csrf : 해당 옵션을 활성화하면 CSRF 토큰이 발급되는 필터를 시큐리티 가 자동으로 설정해준다.
 
 하지만 비활성화 해놓은 이유는 REST API 로 개발했기 때문이다.
 
@@ -204,7 +192,7 @@ REST API 는 stateless 하게 개발하기에 유저 세션을 따로 저장하�
 
 CSRF : Cross-site request forgery 의 약자로 사이트 간 요청 위조 이다. 웹사이트 취약점을 노린 공격으로 사용자가 자기도 모르게 공격자가 의도한 행위를 사이트에 요청을 하여 행하게 하는 공격이다.
 
-주로 쿠키(Session ID) 를 탈취한 뒤 공격자가 의도한 행위, 즉 임의의 URL 로  Request 를 도용, 위조 하는것이다.
+주로 쿠키(Session ID) 를 탈취한 뒤 공격자가 의도한 행위, 즉 임의의 URL 로 Request 를 도용, 위조 하는것이다.
 
 ### 예시
 
@@ -232,7 +220,11 @@ antMatchers() : 해당 설정에 경로를 적어주고 뒤에 .hasRole() , perm
 
 .permitAll : 해당 경로는 누구나 접근이 가능하다.
 
-.anyRequest().authenticated() :  어떤 요청이든 인증이 되야 한다.
+permitAll 을 해도 서큐리티 필터에 걸리면서 해당 URL 일 시 서큐리티 필터에서 request 에 임의 값을 넣어 필터체인을 통과되게 동작
+
+
+
+.anyRequest().authenticated() : 어떤 요청이든 인증이 되야 한다.
 
 .formlogin() : 스프링 시큐리티가 지원해주는 폼 로그인 방식을 사용한다.
 
@@ -244,7 +236,7 @@ defaultSuccessUrl : 정상적으로 로그인이 성공했을때 이동하는 �
 
 failureUrl : 로그인 실패 시 이동하는 페이지
 
-failureHandler :  로그인 실패 시 동작하는 핸들러를 설정할수있다.
+failureHandler : 로그인 실패 시 동작하는 핸들러를 설정할수있다.
 
 successHandler : 로그인 성공 시 동작하는 핸들러를 설정할수있다.
 
@@ -253,13 +245,8 @@ http.addFilterBefore(new CustomAuthenticationProcessingFilter("/login-process"),
                 UsernamePasswordAuthenticationFilter.class);
 ```
 
-addFilterBefore :  커스텀 필터를 뒤에 있는 필터보다 먼저 실행되게 설정
+addFilterBefore : 커스텀 필터를 뒤에 있는 필터보다 먼저 실행되게 설정
 
 addFilterAfter : 커스텀 필터를 뒤에잇는 필터 뒤에 실행되게 설정
 
 addFilterAt : 지정된 필터 순서에 커스텀 필터 실행 되게 설정
-
-
-
-
-
