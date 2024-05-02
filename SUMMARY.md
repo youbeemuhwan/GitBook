@@ -101,4 +101,5 @@
 ## 객체지향과 디자인패턴
 
 * [Page](undefined/page.md)
-* [1. 절차지향과 객체지향](undefined/1..md)
+* [절차지향과 객체지향](undefined/undefined.md)
+* [다형성과 추상타입](undefined/undefined-1.md)
