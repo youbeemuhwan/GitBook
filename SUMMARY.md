@@ -78,6 +78,7 @@
 
 ## Etc
 
+* [TDA (Tell, Don't Ask) 법칙](etc/tda-tell-dont-ask.md)
 * [Ngnix 란?](etc/ngnix.md)
 * [Redis 란?](etc/redis.md)
 * [XML 파싱 (Xpath)](etc/xml-xpath.md)
@@ -87,6 +88,7 @@
 * [Docker](etc/docker.md)
 * [GC (Garbage Collection)](etc/gc-garbage-collection.md)
 * [객체지향 프로그램 과 디자인패턴 -1](etc/1.md)
+* [디미터 법칙 (클린코드)](etc/undefined.md)
 
 ## CS
 
@@ -95,3 +97,8 @@
 ## Project
 
 * [Untitled](project/untitled.md)
+
+## 객체지향과 디자인패턴
+
+* [Page](undefined/page.md)
+* [1. 절차지향과 객체지향](undefined/1..md)
