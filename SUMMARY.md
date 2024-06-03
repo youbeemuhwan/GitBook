@@ -58,6 +58,7 @@
 * [유니크 값 없는 테이블을 JPA Entity 연결하기](object-1/jpa-entity.md)
 * [Dialect](object-1/dialect.md)
 * [서버에 WAS 패키징 시 오류](object-1/was.md)
+* [외장톰캣에서 SSL 인증서 적용](object-1/ssl.md)
 
 ## CodingTest
 
@@ -89,6 +90,7 @@
 * [GC (Garbage Collection)](etc/gc-garbage-collection.md)
 * [객체지향 프로그램 과 디자인패턴 -1](etc/1.md)
 * [디미터 법칙 (클린코드)](etc/undefined.md)
+* [OpenSSL 설치](etc/openssl.md)
 
 ## CS
 
@@ -113,3 +115,7 @@
 
 * [섹션-1](nest.js/1.md)
 * [섹션-2](nest.js/2.md)
+
+***
+
+* [Page 1](page-1.md)
