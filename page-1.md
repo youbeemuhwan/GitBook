@@ -278,7 +278,7 @@ BypassTokenDto :
 
 ### URL
 
-https://ums.ish.or.kr/untact/test
+https://ums.ish.or.kr/untact/checkPatientInfo/test
 
 ### HTTP METHOD
 
@@ -307,9 +307,42 @@ TokenDto : {
 
 ### DESCRIPTION
 
-환자정보를 바탕으로 검증 후 토큰 생성한다.
+&#x20; 본인인증 완료 시 본인인증 정보와 URL 환자정보를 대조해 검증하고 토큰 발급
 
-* 테스트 페이지 진입 시 하드코딩된 테스트 유저 데이터를 바탕으로 토큰을 생성한다.
+
+
+### URL
+
+https://ums.ish.or.kr/untact/checkPatientInfo
+
+### HTTP METHOD
+
+POST
+
+### REQUEST :
+
+<pre><code>{ 
+<strong>    certifiedName : "유저이름" :  String,
+</strong>   certifiedBirth : "유저 생년월일" (YYYYMMDD) : String,
+   userInfoCode : IO_GUBUN+BUNHO : String,
+}
+</code></pre>
+
+### RESPONSE :
+
+```
+TokenDto : {
+     token : String    
+}
+```
+
+
+
+
+
+### DESCRIPTION
+
+서식 페이지 진입 시 토큰 검증
 
 ### URL
 
@@ -331,12 +364,44 @@ POST
 
 ```
 resultDto : {
-     certifiedBirth : 유저 생년월일 : YYYYMMDD
+     certifiedBirth : "유저 생년월일" (YYYYMMDD) : String
+     PATIENT_KEY : "환자키" ( IO_GUBUN + NAEWON_KEY) : String
+     PATIENT_CODE : "BUNHO" : String
+     FORM_NAME : "서식 명" : String EX. endocrine, obgyn
      
 }
 ```
 
 
 
+### DESCRIPTION
 
+본인인증 페이지 진입 시 토큰이 존재한다면 토큰 검증증
+
+### URL
+
+https://ums.ish.or.kr/untact/validateToken/ByPatientKey
+
+### HTTP METHOD
+
+POST
+
+### REQUEST :
+
+<pre><code>{ 
+<strong>    token : String,
+</strong><strong>    patientKey: "환자키" ( IO_GUBUN + NAEWON_KEY) : String
+</strong></code></pre>
+
+### RESPONSE :
+
+```
+resultDto : {
+     certifiedBirth : "유저 생년월일" (YYYYMMDD) : String
+     PATIENT_KEY : "환자키" ( IO_GUBUN + NAEWON_KEY) : String
+     PATIENT_CODE : "BUNHO" : String
+     FORM_NAME : "서식 명" : String EX. endocrine, obgyn
+     
+}
+```
 
