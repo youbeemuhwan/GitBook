@@ -76,6 +76,7 @@
 * [동기 / 비동기 | Blocking / Non-Blocking](java/or-blocking-non-blocking.md)
 * [Ajax 란?](java/ajax.md)
 * [Fetch API](java/fetch-api.md)
+* [Hikari CP 간단한 튜닝](java/hikari-cp.md)
 
 ## Etc
 
