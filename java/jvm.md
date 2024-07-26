@@ -93,10 +93,16 @@ PC Register
 
 
 
-Native Method Stack
+Native Method Stack (Java Native Interface)
 
 * JIT 컴파일러에서 바이트코드를 네이티브로 변환해서 사용할때 해당 네이티브 코드가 실행되는 곳
-* Native Method I와n 연동해서 동]vfsddasds\\\dasdasda\\
+* Native Method Interface 와 연동해서 동작 , NMI 가 호출되면 JNI 가 하나 생성되는 방식
+
+Native Method Library
+
+* JNI 가 이 라이브러리를 사용해서 실행된다.
+
+
 
 
 
