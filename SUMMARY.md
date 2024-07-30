@@ -39,11 +39,6 @@
 * [Internet](100/internet.md)
 * [Spring](100/spring.md)
 
-## 📔 한 주 회고 <a href="#week" id="week"></a>
-
-* [9/11 \~ 9/15](week/page-1.md)
-* [9/18 \~ 9/22](week/9-18-9-22.md)
-
 ## 🔐 Spring Security
 
 * [UserDetails, SecurityCofing](Spring-Security/UserDetails.md)
@@ -112,8 +107,3 @@
 * [02. 이상한 나라의 객체](undefined-1/02..md)
 * [03. 타입과 추상화](undefined-1/03..md)
 * [04. 역할, 책임, 협력](undefined-1/04..md)
-
-## Nest.js
-
-* [섹션-1](nest.js/1.md)
-* [섹션-2](nest.js/2.md)
