@@ -89,14 +89,6 @@
 * [디미터 법칙 (클린코드)](etc/undefined.md)
 * [상속 보단 조합(Composition)](etc/composition.md)
 
-## CS
-
-* [넓고 얉게 배우는 CS](cs/cs.md)
-
-## Project
-
-* [Untitled](project/untitled.md)
-
 ## 객체지향과 디자인패턴
 
 * [절차지향과 객체지향](undefined/undefined.md)
