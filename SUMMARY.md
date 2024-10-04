@@ -87,6 +87,7 @@
 * [GC (Garbage Collection)](etc/gc-garbage-collection.md)
 * [디미터 법칙 (클린코드)](etc/undefined.md)
 * [상속 보단 조합(Composition)](etc/composition.md)
+* [Rest API 란](etc/rest-api.md)
 
 ## 객체지향과 디자인패턴
 
