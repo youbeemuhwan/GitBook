@@ -88,6 +88,7 @@
 * [디미터 법칙 (클린코드)](etc/undefined.md)
 * [상속 보단 조합(Composition)](etc/composition.md)
 * [Rest API 란](etc/rest-api.md)
+* [CI/CD 워크플로우 설정](etc/ci-cd.md)
 
 ## 객체지향과 디자인패턴
 
